@@ -1,4 +1,4 @@
-#include "holberton.h"
+nclude"main.h"
 
 
 
@@ -8,36 +8,34 @@
  *
  *   *
  *
- *    * Return: Always returns 0
+ *    * Description: prints _putchar using putchar prototype
  *
  *     *
  *
+ *      * Return: Always 0 (Success)
+ *
  *      */
+
+
 
 int main(void)
 
 {
 
-		_putchar('H');
+		char str[] = "_putchar";
 
-			_putchar('o');
+			int ch;
 
-				_putchar('l');
 
-					_putchar('b');
 
-						_putchar('e');
+				for (ch = 0; ch < 8; ++ch)
 
-							_putchar('r');
+							_putchar(str[ch]);
 
-								_putchar('t');
+					_putchar('\n');
 
-									_putchar('o');
 
-										_putchar('n');
 
-											_putchar('\n');
-
-												return (0);
+						return (0);
 
 }

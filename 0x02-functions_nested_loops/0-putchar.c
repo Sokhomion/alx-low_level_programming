@@ -1,4 +1,4 @@
-nclude"main.h"
+#include "main.h"
 
 
 
@@ -8,34 +8,36 @@ nclude"main.h"
  *
  *   *
  *
- *    * Description: prints _putchar using putchar prototype
+ *    * Return: Always returns 0
  *
  *     *
  *
- *      * Return: Always 0 (Success)
- *
  *      */
-
-
 
 int main(void)
 
 {
 
-		char str[] = "_putchar";
+		_putchar('H');
 
-			int ch;
+			_putchar('o');
 
+				_putchar('l');
 
+					_putchar('b');
 
-				for (ch = 0; ch < 8; ++ch)
+						_putchar('e');
 
-							_putchar(str[ch]);
+							_putchar('r');
 
-					_putchar('\n');
+								_putchar('t');
 
+									_putchar('o');
 
+										_putchar('n');
 
-						return (0);
+											_putchar('\n');
+
+												return (0);
 
 }

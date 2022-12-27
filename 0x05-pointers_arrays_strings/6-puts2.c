@@ -2,48 +2,56 @@
 
 /**
  *
- *  * puts2 - main function.
+ *  * puts2 - function should print only one character out of two
  *
- *   * @str: Pointer, the string to print.
+ *   * starting with the first one
  *
- *    *
+ *    * @str: input
  *
- *     * Description: This function prints every other character of a string
+ *     * Return: print
  *
- *      * (divisible by two)
- *
- *       * Return: none.
- *
- *        */
-
-
+ *      */
 
 void puts2(char *str)
 
 {
 
-		int i;
+		int longi = 0;
+
+			int t = 0;
+
+				char *y = str;
+
+					int o;
 
 
 
-			while (str[i])
+						while (*y != '\0')
 
-					{
+								{
 
-								if (i % 2 == 0)
+											y++;
 
-											{
+													longi++;
 
-															_putchar(str[i]);
+														}
 
-																	}
+							t = longi - 1;
 
+								for (o = 0 ; o <= t ; o++)
 
+										{
 
-										i++;
+													if (o % 2 == 0)
 
-											}
+															{
 
-				_putchar('\n');
+																		_putchar(str[o]);
+
+																			}
+
+														}
+
+									_putchar('\n');
 
 }
